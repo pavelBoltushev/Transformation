@@ -6,7 +6,7 @@ public class YAxisRotator : MonoBehaviour
 {
     [SerializeField] private float _speed;
     
-    void Update()
+    private void Update()
     {
         float currentYRotation = transform.rotation.eulerAngles.y;        
         currentYRotation += _speed * Time.deltaTime;
